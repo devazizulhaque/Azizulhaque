@@ -1,0 +1,264 @@
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+/* css variables */
+:root{
+    --primary-color:#4458dc;
+    --primary-color2:#854fee;
+    --title-color:#141313;
+    --text-color:#777777;
+    --border-color: #201f1f17;
+    --gradient-color:linear-gradient(90deg,#4458dc 0%,#854fee 100%);
+    --shadow-color:0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow:0px 10px 30px rgba(57,56,61,0.205);
+
+    /* font family variables */
+    --verdana:Verdana, Geneva, Tahoma, sans-serif,cursive;
+}
+
+/* start navigation */
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+
+}
+.header_area .main-menu .navbar{
+    padding: 1rem 15rem;
+}
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500px 15px/2px var(--verdana);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color:var(--title-color);
+}
+.header_area .main-menu .navbar-nav .active a{
+    background:var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.header_area .main-menu .navbar-nav a:hover{
+    background:var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* end navigation */
+
+/* banner area */
+
+.site-main .site-banner{
+    background: url(./webimg/backport000111.jpg) repeat 100% 50%; 
+}
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500px;
+    color: rgb(79, 79, 209);
+}
+.site-main .site-banner .site-title h3::after{
+    content:"";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    transform: translateY(-10px);
+    
+}
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+    color: blue;
+}
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+.site-main .site-banner .banner-image .img-fluid{
+padding:1rem 0rem;
+width: 90rem;
+position: absolute;
+left: 100px;
+}
+.title-text{
+    font: normal bold 50px/ 72px var(--verdana);
+}
+/* end banner area */
+/* button */
+button{
+    /* padding: 8rem 2.2rem; */
+    font: normal 500px 16px/20px var(--verdana);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+.button.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background.6s ease;
+    box-shadow: var(--box-shadow);
+}
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+.button.primary-button::after,.button.secondary-button::after{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+.button.secondary-button{
+    background:var(--gradient-color);
+    background-clip: padding-box;
+    transition: background.6s ease;
+    color: whitesmoke;
+}
+.button.secondary-button:hover{
+    background: whitesmoke;
+    color: black;
+    box-shadow: var(--box-shadow);
+}
+/* start about area */
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+.site-main .about-area .about-title h2>span{
+display: block;
+font: normal bold 49px/6opx var(--verdana);
+letter-spacing: 21px;
+}
+.site-main .about-area .about-title .paragraph>p{
+    padding: 4rem 0;
+}
+.site-main .about-area .about-image img{
+    width: 200rem;
+}
+p.para{
+    color: var(--text-color);
+    font: normal 500px 16px/25px var(--verdana);
+}
+/* end about area */
+
+/* start brand area */
+.site-main .brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+.site-main .brand-area .first-row .col-lg-4{
+display: flex;
+justify-content: center;
+}
+.site-main .brand-area .first-row .col-lg-4>.single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0rem;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform.4s ease;
+}
+.site-main .brand-area .first-row .col-lg-4>.single-brand>img{
+width: 50%;
+}
+.site-main .brand-area .first-row .col-lg-4>.single-brand>img:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+}
+.site-main .brand-area .first-row .col-lg-4>.single-brand:hover>img{
+    filter: brightness(0.15);
+}
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+}
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+.site-main .brand-area .experience-area .years-area{
+    background: url(./pyback.jpg) no-repeat 45px 20px;
+    padding: 2rem 0rem;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+.site-main .brand-area .experience-area .bg-panel{
+    position: absolute;
+    left: -190px;
+    top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+.site-main .brand-area .experience-area .years-area .years{
+    font: normal bold 84px/40px var(--verdana);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+.site-main .brand-area .experience-area .years-area h2>span{
+    font: normal 600px 22px/30px var(--verdana);
+}
+.site-main .brand-area .experience-area .ca ll-area{
+    padding-left: 10rem;
+}
+.font-verdana{
+    font-family: Var(--verdana);
+}
+/* end brand area */
+/* services area */
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+.site-main .services-area .services-title{
+    padding: 0rem 14rem;
+}
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+}
+.site-main>.services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0rem;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+.site-main>.services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+/* end services area*/
+/* project area */
+.site-main .project-area{
+    padding: 4rem 0rem;
+}
+.site-main .project-area .button-group button{
+    margin-bottom: 20px;
+    background: transparent;
+    border: none;
+    font: normal 500px 16px/130px var(--verdana);
+    text-transform: uppercase;
+}
+.site-main .project-area .button-group button + button{
+    margin-left: 30px;
+}
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700px 25px/12px var(--verdana);
+}
+button:focus
+button:active
+button:hover
+.btn .active{
+    outline: 0px important;
+    box-shadow: none important;
+}
+/* end project area */
